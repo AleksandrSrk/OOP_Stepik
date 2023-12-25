@@ -4,6 +4,8 @@ public class Dog {
     double weight;
     int speed;
 
+
+
     void infoDog () {
         System.out.println("Собака " + name + " породы " + breed + " и весом " + weight + " кг.");
     }
@@ -12,4 +14,6 @@ public class Dog {
             System.out.println("Бегу " + (i+1) + " раз.");
         }
     }
+
+
 }

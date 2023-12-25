@@ -1,13 +1,23 @@
 public class Main {
+    /**
+     * Создать конструктор хоткейс Альт + Инсерт
+     * Переименовать класс ШИФТ + F6
+     * Выбор вариантов перегрузок методов КТРЛ + Р. Чтобы метод был перегружаемый, параметры в нем должны отличаться количеством или типом
+     * Чтобы обращаться к методу класса без создания объекта, нужно к методу добавить STATIC (при условии что в классе не создана переменная из этого метода)
+     * Перегрузка метода - когда создаем несколько конструкторов, при создании объекта и вызове метода из конструктора, ИДЕ сама выбирает какой метод подставить по вводимым параметрам
+     **/
     public static void main(String[] args) {
-//        Box box1 = new Box(); // создали новый объект Box и ссылочную переменную box1
+//        Employer emp1 = new Employer("Petr", "STO", 2_000);
+//        emp1.schowInfo();
+
+//        Box box1 = new Box(10,10,10); // создали новый объект Box и ссылочную переменную box1
 ////        box1.height = 10;
 ////        box1.lengts = 10;
 ////        box1.width = 10;
-//        box1.setDimens(10,10,10);
+////        box1.setDimens(10,10,10);
 //
-//        Box box2 = new Box();
-//        box2.setDimens(20,20,20);
+//        Box box2 = new Box(20,20,20);
+////        box2.setDimens(20,20,20);
 ////        box2.height = 20;
 ////        box2.lengts = 20;
 ////        box2.width = 20;
@@ -53,8 +63,24 @@ public class Main {
 //        Test test = new Test();
 //
 //        System.out.println(test.square(20));
-        Rectangle rect = new Rectangle();
-        rect.setParam(10,20);
-        rect.square();
+//        Rectangle rect = new Rectangle();
+//        rect.setParam(10,20);
+//        rect.square();
+
+//        Math math = new Math();
+//        System.out.println(MyMath.multiple(5));
+//        Box box = new Box(10.5);
+//        box.showVolume();
+//        Monstr monstr = new Monstr(5);
+//        monstr.voice(5, "qweqwe");
+
+        Box current = new Box(5);
+        Box another = current.copyM2Box();
+//        another.setDimens(20,20,20);
+        current.showVolume();
+        another.showVolume();
+
     }
+
+
 }
